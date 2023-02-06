@@ -1,2 +1,2 @@
-weRvet Application 
-allows you to....
+weRvet infra Application 
+will provision all resources in terraform
