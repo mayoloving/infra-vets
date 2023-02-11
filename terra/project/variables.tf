@@ -41,3 +41,27 @@ variable "project_key_name" {
 variable "project_region" {
   type = string
 }
+
+# target group health_check
+
+variable "project_tg_path" {
+  type = string
+}
+variable "project_tg_port" {
+  type = number
+}
+variable "project_tg_interval" {
+  type = number
+}
+variable "project_tg_protocol" {
+  type = string
+}
+variable "project_tg_timeout" {
+  type = number
+}
+variable "project_tg_healthy_threshold" {
+  type = number
+}
+variable "project_tg_unhealthy_threshold" {
+  type = number
+}

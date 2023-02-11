@@ -9,7 +9,7 @@ variable "pubsub_cidrs" {
 
 variable "subnet_count" {
   type    = number
-  default = 1
+  default = 2
 }
 
 # tags

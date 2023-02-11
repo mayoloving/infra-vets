@@ -10,7 +10,7 @@ variable "ec2_ami_type" {
 
 variable "ec2_count" {
   type    = number
-  default = 1
+  default = 2
 }
 
 variable "subnets" {
@@ -43,4 +43,28 @@ variable "expiration_tag" {
 
 variable "key_name" {
   type = string
+}
+
+# target group health_check
+
+variable "tg_path" {
+  type = string
+}
+variable "tg_port" {
+  type = number
+}
+variable "tg_interval" {
+  type = number
+}
+variable "tg_protocol" {
+  type = string
+}
+variable "tg_timeout" {
+  type = number
+}
+variable "tg_healthy_threshold" {
+  type = number
+}
+variable "tg_unhealthy_threshold" {
+  type = number
 }
